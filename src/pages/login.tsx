@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import PageTitle from "../components/PageTitle";
-import logo from "../assets/triptasker-logo.png";
+import logo from "../assets/triptasker-texto.png";
 
 export default function Login() {
 
@@ -21,7 +21,7 @@ export default function Login() {
 
                 <label className="formLabel">
                     Senha
-                    <input className="formInput" type="text" />
+                    <input className="formInput" type="password" placeholder="Senha"/>
                 </label>
 
                 <div className="buttonContainer">

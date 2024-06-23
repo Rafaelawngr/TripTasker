@@ -7,9 +7,12 @@ export default function NavBar() {
             <img className="logo" src={logo} alt="logo triptasker" />
 
             <div className="navItemContainer">
-                <Link to="#" className="navItem">Minhas viagens</Link>
-                <Link to="#" className="navItem">Nova viagem</Link>
-                <Link to="#" className="navItem">Meu perfil</Link>
+                <Link to="/home" className="navItem">Minhas viagens</Link>
+                    <p className="navItem separator">|</p>
+                <Link to="/newTravel" className="navItem">Nova viagem</Link>
+                    <p className="navItem separator">|</p>
+                <Link to="/home" className="navItem">Meu perfil</Link>
+                    <p className="navItem separator">|</p>
                 <Link to="/" className="navItem lastChild">Logout</Link>
             </div>
         </nav>

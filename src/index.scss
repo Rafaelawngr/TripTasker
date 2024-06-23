@@ -13,6 +13,11 @@ button {
     cursor: pointer;
 }
 
+.linkCard {
+    text-decoration: none;
+    color: black;
+}
+
 .formContainer {
     background-color: hsl(0, 0%, 100%);
     font-size: 0.8rem;
@@ -30,6 +35,8 @@ button {
         color: hsl(0, 0%, 30%);
         font-size: 0.7rem;
         margin-bottom: 0.3rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .formInput {
@@ -49,6 +56,7 @@ button {
             outline: none;
         }
     }
+    
 }
 
 #login {
@@ -60,7 +68,8 @@ button {
     }
 
     .logo {
-        width: 75px;
+        width: 200px;
+        height: 150px;
         margin: 0 auto;
     }
 
@@ -133,6 +142,95 @@ button {
     }
 }
 
+#newTravel {
+    .formContainer {
+        margin: 3% auto;
+    }
+
+    .dateInput {
+        margin-top: 3px;
+        padding: 3px;
+        width: inherit;
+        height: 30px;
+        font-size: 0.8rem;
+        width: 100%;
+        height: 1.8rem;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0%, 83%);
+        margin-top: 0.2rem;
+        padding-left: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: end;
+
+        a {
+            width: 100%;
+        }
+
+        .cancelButton {
+            padding: 0.5rem;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background-color: hsl(0, 84%, 52%);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .addTravelButton {
+            padding: 0.5rem;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            background-color: hsl(195, 84%, 48%);
+            color: white;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+#infoTravel {
+    .infoContainer {
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid hsl(0, 0%, 90%);
+        box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+        border-radius: 7px;
+        font-size: 0.8rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 50%;
+        margin: 3% auto;
+        padding: 1.5rem;
+
+        .cardPhoto {
+            padding: 0.1rem;
+            margin: 1rem .5rem .1rem .4rem;
+            align-content: center;
+            text-align: center;
+            height: auto;
+            width: 100%;
+            max-height: 500px;
+        }
+        
+        .cardText {
+            padding: 0.1rem;
+            width: 70%;
+            margin: .5rem 1rem;
+            align-content: center;
+            text-align: center;
+        }
+    }
+}
+
 #NavBar {
 
     display: flex;
@@ -155,11 +253,6 @@ button {
             align-items: center;
             justify-content: center;
             transition: all 0.2s ease-in-out;
-            
-            &::after {
-                margin-left: 10px;
-                content: "|";
-            }
 
             &.lastChild {
 
@@ -170,7 +263,7 @@ button {
                 }
             }
 
-            &:hover {
+            &:hover:not(.separator) {
                 background-color: hsl(0, 0%, 96%);
             }
         }
@@ -184,7 +277,7 @@ button {
     gap: 2rem;
 
     main {
-        padding: 0 15%;
+        padding: 0 25%;
         display: flex;
         gap: 2rem;
     }
@@ -205,6 +298,7 @@ button {
 
     img {
         width: 100%;
+        height: 200px;
         border-radius: 5px;
     }
 
