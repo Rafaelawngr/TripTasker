@@ -14,27 +14,27 @@ export default function Registration() {
 
                 <label className="formLabel">
                     Nome completo
-                    <input className="formInput" type="text" />
+                    <input className="formInput" type="text" placeholder="Trip Tasker" />
                 </label>
 
                 <label className="formLabel">
                     E-mail
-                    <input className="formInput" type="text" />
+                    <input className="formInput" type="text" placeholder="safetravel@triptasker.com" />
                 </label>
 
                 <label className="formLabel">
                     CPF
-                    <input className="formInput" type="text" />
+                    <input className="formInput" type="text" placeholder="012.345.678-90" />
                 </label>
 
                 <label className="formLabel">
                     Senha
-                    <input className="formInput" type="text" />
+                    <input className="formInput" type="password" placeholder="*******" />
                 </label>
 
                 <label className="formLabel">
                     Confirme a senha
-                    <input className="formInput" type="text" />
+                    <input className="formInput" type="password" placeholder="*******" />
                 </label>
 
                 <div className="buttonContainer">
