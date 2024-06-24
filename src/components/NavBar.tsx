@@ -11,7 +11,7 @@ export default function NavBar() {
                     <p className="navItem separator">|</p>
                 <Link to="/newTravel" className="navItem">Nova viagem</Link>
                     <p className="navItem separator">|</p>
-                <Link to="/home" className="navItem">Meu perfil</Link>
+                <Link to="#" className="navItem">Meu perfil</Link>
                     <p className="navItem separator">|</p>
                 <Link to="/" className="navItem lastChild">Logout</Link>
             </div>

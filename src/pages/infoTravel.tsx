@@ -30,7 +30,7 @@ export default function InfoTravel() {
                             Molestias illum earum eius laborum corporis sequi velit nulla nesciunt, quidem consectetur?
                         </p>
                     </div>
-                    <div>
+                    <div className="todoList">
                         <h4>Coisas a fazer no Rio de Janeiro:</h4>
                         <input type="text" placeholder="Adicionar nova atividade" />
                         <p><input type="checkbox" /> Visitar o Cristo Redentor</p>

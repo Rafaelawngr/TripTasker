@@ -201,15 +201,20 @@ button {
         box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
         border-radius: 7px;
         font-size: 0.8rem;
-        
         display: flex;
         flex-direction: column;
         align-content: center;
         align-items: center;
         gap: 1rem;
         width: 50%;
-        margin: 3% auto;
+        margin: 1% auto;
         padding: 1.5rem;
+
+        .todoList {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
 
         .cardPhoto {
             padding: 0.1rem;
@@ -277,9 +282,11 @@ button {
     gap: 2rem;
 
     main {
-        padding: 0 25%;
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         gap: 2rem;
+        justify-content: center;
     }
 }
 
