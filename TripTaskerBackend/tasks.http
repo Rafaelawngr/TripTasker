@@ -1,0 +1,47 @@
+# tasks.http
+
+@TripTaskerBackend_HostAddress = http://localhost:5145
+
+# GET all tasks
+GET {{TripTaskerBackend_HostAddress}}/api/tasks
+Accept: application/json
+
+###
+
+# GET a specific task by ID
+GET {{TripTaskerBackend_HostAddress}}/api/tasks/1
+Accept: application/json
+
+###
+
+# POST create a new task
+POST {{TripTaskerBackend_HostAddress}}/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Visitar o Museu do Louvre",
+  "description": "Visitar o Museu do Louvre em Paris",
+  "taskDate": "2024-07-05",
+  "status": "pending",
+  "tripId": 1
+}
+
+###
+
+# PUT update a task
+PUT {{TripTaskerBackend_HostAddress}}/api/tasks/1
+Content-Type: application/json
+
+{
+  "taskId": 1,
+  "title": "Visitar o Museu do Louvre",
+  "description": "Visitar o Museu do Louvre em Paris e aproveitar para almoçar lá perto",
+  "taskDate": "2024-07-05",
+  "status": "in_progress",
+  "tripId": 1
+}
+
+###
+
+# DELETE a task
+DELETE {{TripTaskerBackend_HostAddress}}/api/tasks/1

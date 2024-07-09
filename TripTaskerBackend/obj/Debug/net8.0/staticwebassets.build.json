@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ld55D7likC+99U7lEI5Yn6s0UY61WUgB0CFnkZEs2H8=",
+  "Source": "TripTaskerBackend",
+  "BasePath": "_content/TripTaskerBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

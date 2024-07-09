@@ -1,0 +1,41 @@
+# trips.http
+
+@TripTaskerBackend_HostAddress = http://localhost:5145
+
+# GET all trips
+GET {{TripTaskerBackend_HostAddress}}/api/trips
+Accept: application/json
+
+###
+
+# GET a specific trip by ID
+GET {{TripTaskerBackend_HostAddress}}/api/trips/1
+Accept: application/json
+
+###
+
+# POST create a new trip
+POST {{TripTaskerBackend_HostAddress}}/api/trips
+Content-Type: application/json
+
+{
+  "title": "Viagem a Paris",
+  "userId": 1
+}
+
+###
+
+# PUT update a trip
+PUT {{TripTaskerBackend_HostAddress}}/api/trips/1
+Content-Type: application/json
+
+{
+  "tripId": 1,
+  "title": "Viagem Atualizada a Paris",
+  "userId": 1
+}
+
+###
+
+# DELETE a trip
+DELETE {{TripTaskerBackend_HostAddress}}/api/trips/1

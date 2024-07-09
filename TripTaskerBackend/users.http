@@ -1,0 +1,43 @@
+# users.http
+
+@TripTaskerBackend_HostAddress = http://localhost:5145
+
+# GET all users
+GET {{TripTaskerBackend_HostAddress}}/api/users
+Accept: application/json
+
+###
+
+# GET a specific user by ID
+GET {{TripTaskerBackend_HostAddress}}/api/users/1
+Accept: application/json
+
+###
+
+# POST create a new user
+POST {{TripTaskerBackend_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "username": "newuser",
+  "password": "password123",
+  "email": "newuser@example.com"
+}
+
+###
+
+# PUT update a user
+PUT {{TripTaskerBackend_HostAddress}}/api/users/1
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "username": "updateduser",
+  "password": "updatedpassword123",
+  "email": "updateduser@example.com"
+}
+
+###
+
+# DELETE a user
+DELETE {{TripTaskerBackend_HostAddress}}/api/users/1
